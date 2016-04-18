@@ -11,7 +11,7 @@ namespace WildLifeTracker.Controllers
         private WildLifeTrackerContext db = new WildLifeTrackerContext();
         public IActionResult Index()
         {
-            return View(db.Sightings.ToList());
+            return View(db.Sightings.Include(x => x.Specie).ToList());
         }
         public IActionResult Details(int id)
         {
