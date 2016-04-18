@@ -1,0 +1,12 @@
+﻿@model WildLifeTracker.Models.Specie
+
+@{ 
+    ViewData["Title"] = "Specie - Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Specie Details</h2>
+<hr />
+
+<p>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(model => model.Name)</p>
+<p>@Html.DisplayNameFor(model => model.SpecieId) : @Html.DisplayFor(model => model.SpecieId)</p>

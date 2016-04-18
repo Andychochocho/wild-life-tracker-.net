@@ -15,6 +15,7 @@ namespace WildLifeTracker.Models
         public string Date { get; set; }
         public string Latitude { get; set; }
         public string Longitude { get; set; }
+        public int SpecieId { get; set; }
         public virtual Specie Specie { get; set; }
     }
 }
